@@ -516,6 +516,10 @@
       "allOf": [{ "$ref": "#/definitions/podScheduling" }],
       "type": "object",
       "properties": {
+        "profile": {
+          "type": "string",
+          "enum": ["paradedb", "postgresql"]
+        },
         "persistence": {
           "type": "object",
           "properties": {
